@@ -1,17 +1,18 @@
 package model.dao.impl;
 
 import model.dao.SellerDao;
+import model.entities.Seller;
 
 import java.util.List;
 
 public class SellerDaoJDBC implements SellerDao {
     @Override
-    public void insert(SellerDao obj) {
+    public void insert(Seller obj) {
 
     }
 
     @Override
-    public void update(SellerDao obj) {
+    public void update(Seller obj) {
 
     }
 
@@ -21,12 +22,12 @@ public class SellerDaoJDBC implements SellerDao {
     }
 
     @Override
-    public SellerDao findById(Integer id) {
+    public Seller findById(Integer id) {
         return null;
     }
 
     @Override
-    public List<SellerDao> findAll() {
+    public List<Seller> findAll() {
         return null;
     }
 }

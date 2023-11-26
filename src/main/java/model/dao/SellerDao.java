@@ -1,4 +1,6 @@
 package model.dao;
 
-public interface SellerDao extends BaseDao<SellerDao>{
+import model.entities.Seller;
+
+public interface SellerDao extends BaseDao<Seller>{
 }
