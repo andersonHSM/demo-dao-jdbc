@@ -1,10 +1,11 @@
 package model.dao;
 
+import model.entities.Department;
 import model.entities.Seller;
 
 import java.util.List;
 
 public interface SellerDao extends BaseDao<Seller> {
 
-    List<Seller> findByDepartment(Integer departmentId);
+    List<Seller> findByDepartment(Department department);
 }
