@@ -12,6 +12,15 @@ public class Seller implements Serializable {
     private Double baseSalary;
     private Department department;
 
+    public Seller(Integer id, String name, String email, Date birthDate, Double baseSalary, Department department) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.birthDate = birthDate;
+        this.baseSalary = baseSalary;
+        this.department = department;
+    }
+
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Seller{");
@@ -23,15 +32,6 @@ public class Seller implements Serializable {
         sb.append(", department=").append(department);
         sb.append('}');
         return sb.toString();
-    }
-
-    public Seller(Integer id, String name, String email, Date birthDate, Double baseSalary, Department department) {
-        this.id = id;
-        this.name = name;
-        this.email = email;
-        this.birthDate = birthDate;
-        this.baseSalary = baseSalary;
-        this.department = department;
     }
 
     public Integer getId() {
@@ -86,5 +86,4 @@ public class Seller implements Serializable {
     public int hashCode() {
         return Objects.hash(id);
     }
-
 }
