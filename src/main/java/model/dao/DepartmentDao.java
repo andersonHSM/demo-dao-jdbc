@@ -1,4 +1,6 @@
 package model.dao;
 
-public interface DepartmentDao extends BaseDao<DepartmentDao>{
+import model.entities.Department;
+
+public interface DepartmentDao extends BaseDao<Department> {
 }

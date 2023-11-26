@@ -1,17 +1,25 @@
 package model.dao.impl;
 
 import model.dao.DepartmentDao;
+import model.entities.Department;
 
+import java.sql.Connection;
 import java.util.List;
 
 public class DepartmentDaoJDBC implements DepartmentDao {
+    private Connection connection;
+
+    public DepartmentDaoJDBC(Connection connection) {
+        this.connection = connection;
+    }
+
     @Override
-    public void insert(DepartmentDao obj) {
+    public void insert(Department obj) {
 
     }
 
     @Override
-    public void update(DepartmentDao obj) {
+    public void update(Department obj) {
 
     }
 
@@ -21,12 +29,12 @@ public class DepartmentDaoJDBC implements DepartmentDao {
     }
 
     @Override
-    public DepartmentDao findById(Integer id) {
+    public Department findById(Integer id) {
         return null;
     }
 
     @Override
-    public List<DepartmentDao> findAll() {
+    public List<Department> findAll() {
         return null;
     }
 }
