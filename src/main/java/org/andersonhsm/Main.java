@@ -4,6 +4,8 @@ import model.dao.DaoFactory;
 import model.dao.SellerDao;
 import model.entities.Seller;
 
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -15,6 +17,15 @@ public class Main {
         System.out.println(seller);
 
         System.out.println("=== TEST 1: findById END ===");
+
+        System.out.println("\n=== TEST 2: findByDepartment ===");
+
+        List<Seller> sellersList = sellerDao.findByDepartment(2);
+
+        sellersList.forEach(System.out::println);
+
+        System.out.println("=== TEST 2: findByDepartment END ===");
+
 
     }
 }
